@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register Your Property!</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/14cda3c233.js"
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="listing.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <form>
+        <i class="fas fa-paper-plane"></i>
+
+        <div class="input-group">
+          <label>Property Name</label>
+          <input
+            type="text"
+            placeholder="Enter Your Property Title"
+            id="title"
+            required
+          />
+        </div>
+
+        <div class="input-group">
+          <label>Street</label>
+          <input
+            type="text"
+            placeholder="Enter Your Property's Street"
+            id="street"
+            required
+          />
+        </div>
+        <div class="input-group">
+          <label>City</label>
+          <input
+            type="text"
+            placeholder="Enter Your Property's City"
+            id="city"
+            required
+          />
+        </div>
+        <div class="input-group">
+          <label>Country</label>
+          <input
+            type="text"
+            placeholder="Enter Your Property's Country"
+            id="country"
+          />
+        </div>
+
+        <div class="input-group">
+          <label>Price</label>
+          <input
+            type="number"
+            placeholder="Enter The Desired Price Per Night (USD)"
+            id="price"
+            min="0"
+            required
+          />
+        </div>
+
+        <div class="input-group">
+          <label>Max. Allowed Guests</label>
+          <input
+            type="number"
+            placeholder="Enter The Guest Max. Limit"
+            id="limit"
+            min="0"
+            required
+          />
+        </div>
+
+        <div class="input-group">
+          <label>Size</label>
+          <input
+            type="number"
+            placeholder="Enter The Property's Size (sqr. feet)"
+            id="size"
+            min="0"
+            required
+          />
+        </div>
+        <div class="input-group">
+          <label>Bedrooms</label>
+          <input
+            type="number"
+            placeholder="How many Bedrooms?"
+            id="bedrooms"
+            min="0"
+            required
+          />
+        </div>
+        <div class="input-group">
+          <label>Bathrooms</label>
+          <input
+            type="number"
+            placeholder="How many Bathrooms?"
+            id="bathrooms"
+            min="0"
+            required
+          />
+        </div>
+        <div class="input-group">
+          <label>Min. Nights</label>
+          <input
+            type="number"
+            placeholder="Enter Minimum Nights Required"
+            id="min-nights"
+            min="1"
+            required
+          />
+        </div>
+        <div class="input-group">
+          <label>Max. Nights</label>
+          <input
+            type="number"
+            placeholder="Enter Maximum Nights Possible"
+            id="max-nights"
+            min="2"
+            required
+          />
+        </div>
+
+        <div class="input-group">
+          <label>Message</label>
+          <textarea
+            rows="5"
+            placeholder="See The Response Here"
+            id="msg"
+          ></textarea>
+        </div>
+
+        <button id="btn-submit">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>
